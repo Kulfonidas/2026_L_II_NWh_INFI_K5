@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.12"
+
+# Komendy wykonywane przed testami (instalacja bibliotek)
+install:
+  - make deps
+
+# Główna komenda odpalająca testy
+script:
+  - make test
